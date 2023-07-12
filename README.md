@@ -1,5 +1,5 @@
 # Space Tourism Website
-This is a responsive single-page-application based on a challenge from Frontend Mentor, that includes four different page, such as home, destinations, crew, and technology.
+This is a responsive single-page-application based on a challenge from Frontend Mentor, that includes four different pages, such as home, destinations, crew, and technology.
 All the images, icons, and content are provided by Frontend Mentor.
 
 ## Installation
