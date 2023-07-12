@@ -1,5 +1,6 @@
 # Space Tourism Website
 This is a responsive single-page-application based on a challenge from Frontend Mentor, that includes four different page, such as home, destinations, crew, and technology.
+All the images, icons, and content are provided by Frontend Mentor.
 
 ## Installation
 - Clone this repository: https://github.com/mandanaD/space-tourism.git
@@ -11,5 +12,3 @@ This website has four pages: Home, Destination, Crew, and Technology. Each page 
 - On the Destination page, you can click on the tabs to see different destinations and their details.
 - On the Crew page, you can click on the dots to see the crew members name and role.
 - On the Technology page, you can click on the buttons to see different technologies and their descriptions.
-## Credits
-This project is inspired by a challenge from Frontend Mentor. The images, icons, and content are provided by them. The fonts used are Barlow and Fraunces.
