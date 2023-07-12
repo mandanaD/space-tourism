@@ -1,0 +1,118 @@
+.Home {
+    background-image: url("../../assets/home/background-home-desktop.jpg") ;
+    min-height:100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: bottom center;
+}
+.Home-container {
+    max-width: 80rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-top:clamp(5rem,35vh,15rem);
+    margin-inline: auto;
+}
+
+.text {
+    width: 450px;
+}
+.bottom{
+    line-height: 2rem;
+}
+.shape {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    display: grid;
+    place-items: center;
+    font-weight: 100;
+    cursor: pointer;
+}
+.shape-overlay{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: hsl(0 0% 100%);
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+    z-index: 1;
+}
+.shape:hover .shape-overlay ,.shape:focus .shape-overlay{
+    transform: scale(1.4);
+    opacity: 0.2;
+}
+@media (max-width: 35rem) {
+    .Home {
+        background-image: url("../../assets/home/background-home-mobile.jpg") ;
+    }
+    .Home-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top:6rem;
+        gap: 3rem;
+    }
+    .text {
+        text-align: center;
+        width: 300px;
+    }
+    .middle{
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .top{
+        font-size: var(--fs-400);
+    }
+    .bottom{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .shape {
+        width: 170px;
+        height: 170px;
+        font-size: 30px;
+    }
+    .shape-overlay{
+        width: 170px;
+        height: 170px;
+    }
+}
+@media (min-width: 35rem) and (max-width: 55rem){
+    .Home {
+        background-image: url("../../assets/home/background-home-tablet.jpg") ;
+    }
+    .Home-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8rem;
+        gap: 3rem;
+    }
+    .text {
+        text-align: center;
+    }
+    .middle{
+        font-size: var(--fs-800);
+    }
+    .bottom{
+        font-size: var(--fs-300);
+        line-height: 1.5rem;
+    }
+    .shape {
+        width: 190px;
+        height: 190px;
+        font-size: 30px;
+    }
+    .shape-overlay{
+        width: 190px;
+        height: 190px;
+    }
+}
