@@ -1,8 +1,8 @@
 # Space Tourism Website
-This is a responsive single-page-application based on a challenge from Frontend Mentor, that showcases different aspects of space tourism, such as destinations, crew, and technology.
+This is a responsive single-page-application based on a challenge from Frontend Mentor, that includes four different page, such as home, destinations, crew, and technology.
 
 ## Installation
-- Clone this repository:https://github.com/your-username/space-tourism-website.git.
+- Clone this repository: https://github.com/mandanaD/space-tourism.git
 - Install dependencies: npm install
 - Run the app: npm start
 - Open the app in your browser at http://localhost:3000
