@@ -1,12 +1,12 @@
-import {Link,useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import ReactLogo from '../../assets/shared/logo.svg';
-import {useState,useEffect} from "react";
+import {useState, useEffect} from "react";
 import "./Navbar.css"
 
 const Navbar = () => {
     const [isShown, setIsShown] = useState(true)
     const [select, setSelect] = useState("")
-    let path=useLocation().pathname.slice(1)
+    let path = useLocation().pathname.slice(1)
     let ClassName = ["Nav"]
     let Hamburger = ["hamburger display"]
     let Close = ["close"]
@@ -15,9 +15,13 @@ const Navbar = () => {
         Hamburger = ["hamburger"]
         Close = ["close display"]
     }
-    useEffect(()=>{
-        setSelect(path)
-    },[path])
+    useEffect(() => {
+        if (path === "space-tourism") {
+            setSelect("")
+        } else {
+            setSelect(path)
+        }
+    }, [path])
     return (
         <nav className={"Nav-container ff-sans-cond fs-200 letter-spacing-2"}>
             <img src={ReactLogo} alt=""/>
@@ -29,7 +33,7 @@ const Navbar = () => {
             }}/>
             <div className={ClassName.toString()}>
                 <ul>
-                    <li className={select===""?"underline":"no-underline"} >
+                    <li className={select === "" ? "underline" : "no-underline"}>
                         <Link to={"/"}>
                             <span>
                             00
@@ -37,15 +41,15 @@ const Navbar = () => {
                             Home
                         </Link>
                     </li>
-                    <li className={select==="Destination"?"underline":"no-underline"}>
-                        <Link to={"/Destination"} >
+                    <li className={select === "Destination" ? "underline" : "no-underline"}>
+                        <Link to={"/Destination"}>
                             <span>
                             01
                             </span>
                             Destination
                         </Link>
                     </li>
-                    <li className={select==="Crew"?"underline":"no-underline"} >
+                    <li className={select === "Crew" ? "underline" : "no-underline"}>
                         <Link to={"/Crew"}>
                             <span>
                             02
@@ -53,8 +57,8 @@ const Navbar = () => {
                             Crew
                         </Link>
                     </li>
-                    <li className={select==="Technology"?"underline":"no-underline"}>
-                        <Link to={"/Technology"} >
+                    <li className={select === "Technology" ? "underline" : "no-underline"}>
+                        <Link to={"/Technology"}>
                             <span>
                             03
                             </span>
